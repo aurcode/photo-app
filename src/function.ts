@@ -39,4 +39,25 @@ let createPic = (title: string, date: string, size: SquareSize): object => {
 };
 
 const picture = createPic('Ñeka durmiendo', '2020-8-26', '1000x1000');
-console.log(picture)
+console.log(picture);
+
+//Tipo de retorno con Typescript
+
+function handleError(code: number, message: string): never | string {
+    // Procesamiento del codigo, mensaje
+    if(message === 'error') {
+        throw new Error(`${message}. Code error ${code}`);
+    } else {
+        return 'An error has ocurred';
+    }
+}
+
+try {
+    let result = handleError(200, 'OK');
+    console.log('result', result)
+
+    result = handleError(404, 'error');
+    console.log('result', result)
+} catch (error) {
+    // Nothing
+}
