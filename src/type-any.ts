@@ -1,3 +1,5 @@
+export{};
+
 // Tipo explicito
 let idUser: any;
 idUser = 1; // number

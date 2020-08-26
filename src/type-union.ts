@@ -1,4 +1,4 @@
-// export{};
+export{};
 // // 10, '10'
 
 // let idUser: number | string
