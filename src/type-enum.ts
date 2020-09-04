@@ -1,3 +1,5 @@
+export{}
+
 // Orientacion para Fotografias 
 // const landscape = 0;
 // const portrait = 1;
