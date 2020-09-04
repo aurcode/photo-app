@@ -1,5 +1,7 @@
 // Void
 
+export{}
+
 // Tipo explicito 
 
 function showInfo(user: any): any {
