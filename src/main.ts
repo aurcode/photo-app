@@ -1,5 +1,3 @@
-// import {User, Album, Picture, PhotoOrientation} from './photo-app';
-
 import { Album } from "./album";
 import { PhotoOrientation } from "./photo-orientation";
 import { Picture } from "./picture";
@@ -14,4 +12,5 @@ const picture = new Picture(3, 'TypeScript Course', '2020-9', PhotoOrientation.L
 user.addAlbum(album);
 album.addPicture(picture);
 
+user.removeAlbum(album);
 console.log(user);
