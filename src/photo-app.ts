@@ -5,7 +5,7 @@ export enum PhotoOrientation{
 	Panorama
 }
 
-class User {
+export class User {
     private album: Album[];
     //      picture: Picture[];
 
@@ -21,13 +21,13 @@ class User {
     }
 }
 
-class Item {
+export class Item {
     constructor(public readonly id: number,
                 protected title: string) {
     }
 }
 
-class Album extends Item{
+export class Album extends Item{
     picture: Picture[];
 
     constructor(id: number, title: string) {
@@ -40,7 +40,7 @@ class Album extends Item{
     }
 }
 
-class Picture extends Item{
+export class Picture extends Item{
     constructor(id: number,
                 title: string,
                 private _date: string,
